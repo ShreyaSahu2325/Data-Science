@@ -73,9 +73,9 @@ first_name="shreya"
 last_name="gupta"
 
 #invaid variation name
-2age=20
-first-name="shreya"
-@name="shreya"
+age2=20
+first_name="shreya"
+name="shreya"
 
 ##case sensetivity
 name="shreya"
@@ -126,7 +126,7 @@ print(type(age))
 ##simple calculator
 
 num1=float(input("enter the first number"))
-num2=(input(int("enter the second number")))
+num2=(float(input("enter the second number")))
 
 sum=num1+num2
 difference=num1-num2
@@ -137,3 +137,31 @@ print("sum",sum)
 print("difference",difference)
 print("product",product)
 print("quotient",quotient)
+
+##Integer example
+
+age=20
+Type(age)
+
+##Floating point data type
+height=5.11
+print(height)
+print(Type(height))
+
+##String data type example
+name="shreya"
+print(name)
+print(type(name))
+
+##Boolan datatype
+Type(True)
+is_True=True
+Type(is_true)
+a=10
+b=10
+a==b
+type(a==b)
+
+##common errors
+result="Hello" + str(5)
+print(result)
