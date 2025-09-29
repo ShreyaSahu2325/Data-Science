@@ -167,69 +167,121 @@
 # print(result)
 
 ## Arithmatic operators
-a=10
-b=20
-add_result=a+b
-sub_result=a-b
-mult_result=a*b
-div_result=a/b
-floor_div_divison=a//b
-modulus_result=a%b
-exponent_result=a**b
+# a=10
+# b=20
+# add_result=a+b
+# sub_result=a-b
+# mult_result=a*b
+# div_result=a/b
+# floor_div_divison=a//b
+# modulus_result=a%b
+# exponent_result=a**b
 
-print(add_result)
-print(sub_result)
-print(modulus_result)
-print(modulus_result)
-print(exponent_result)
-print(floor_div_divison)
-print(exponent_result)
+# print(add_result)
+# print(sub_result)
+# print(modulus_result)
+# print(modulus_result)
+# print(exponent_result)
+# print(floor_div_divison)
+# print(exponent_result)
 
-##comparison operators
-a=10
-b=10
+# ##comparison operators
+# a=10
+# b=10
 
-## Not equal to
-str1="Shreya"
-str2="shreya"
-str!=str2
+# ## Not equal to
+# str1="Shreya"
+# str2="shreya"
+# str!=str2
 
-## Greater than
+# ## Greater than
 
-num1=45
-num2=55
+# num1=45
+# num2=55
 
-num1>num2
+# num1>num2
 
-##Less than
-num1=45
-num2=55
+# ##Less than
+# num1=45
+# num2=55
 
-num1<num2
+# num1<num2
 
-##Greater than equal to
-num1=45
-num2=45
+# ##Greater than equal to
+# num1=45
+# num2=45
 
-num1>=num2
+# num1>=num2
 
-##Less than or equal to
-num1=45
-num2=45
-print(num1<=num2)
+# ##Less than or equal to
+# num1=45
+# num2=45
+# print(num1<=num2)
 
-##Logical operator
+# ##Logical operator
 
-X=True
-Y=True
+# X=True
+# Y=True
 
-result=X and Y
-print(result)
+# result=X and Y
+# print(result)
 
-X=False
-Y=False
-result= X or Y
-print(result)
+# X=False
+# Y=False
+# result= X or Y
+# print(result)
 
-X=True
-not X
+# X=True
+# not X
+
+
+##if statement
+age=20
+if age>=18:
+    print("you are allowed to vote in the elections")
+
+##else statement
+
+age=16
+if age>=18:
+    print("you are allowed to vote in the elections") 
+else:
+    print("you are not allowed to vote in the elections")
+
+
+##elif statement
+age=20
+if age<13:
+    print("you are a child")
+elif age>=20:
+    print("you are allowed to vote")
+else:
+    print("you are an adult")
+
+##nested conditional statement
+
+## number even,odd,negative
+num=int(input("enter the number"))
+if num>0:
+    print("the number is positive")
+    if num%2==0:
+        print("number is even")
+    else:
+        print("number is odd")
+else:
+    print("number is negative")       
+
+##leap year using nested if condition
+year=int(input("enter the year"))
+
+if year%4==0:
+    if year%100:
+        if year%400:
+            print(year," is a leap year")
+        else:
+            print(year," is not leap year")
+    else:
+        print(year," is a leap year")    
+else:
+    (year," is not leap year")
+                      
