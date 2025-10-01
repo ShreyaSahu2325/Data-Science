@@ -235,55 +235,142 @@
 # not X
 
 
-##if statement
-age=20
-if age>=18:
-    print("you are allowed to vote in the elections")
+# ##if statement
+# age=20
+# if age>=18:
+#     print("you are allowed to vote in the elections")
 
-##else statement
+# ##else statement
 
-age=16
-if age>=18:
-    print("you are allowed to vote in the elections") 
-else:
-    print("you are not allowed to vote in the elections")
+# age=16
+# if age>=18:
+#     print("you are allowed to vote in the elections") 
+# else:
+#     print("you are not allowed to vote in the elections")
 
 
-##elif statement
-age=20
-if age<13:
-    print("you are a child")
-elif age>=20:
-    print("you are allowed to vote")
-else:
-    print("you are an adult")
+# ##elif statement
+# age=20
+# if age<13:
+#     print("you are a child")
+# elif age>=20:
+#     print("you are allowed to vote")
+# else:
+#     print("you are an adult")
 
-##nested conditional statement
+# ##nested conditional statement
 
-## number even,odd,negative
-num=int(input("enter the number"))
-if num>0:
-    print("the number is positive")
-    if num%2==0:
-        print("number is even")
-    else:
-        print("number is odd")
-else:
-    print("number is negative")       
+# ## number even,odd,negative
+# num=int(input("enter the number"))
+# if num>0:
+#     print("the number is positive")
+#     if num%2==0:
+#         print("number is even")
+#     else:
+#         print("number is odd")
+# else:
+#     print("number is negative")       
 
-##leap year using nested if condition
-year=int(input("enter the year"))
+# ##leap year using nested if condition
+# year=int(input("enter the year"))
 
-if year%4==0:
-    if year%100:
-        if year%400:
-            print(year," is a leap year")
+# if year%4==0:
+#     if year%100:
+#         if year%400:
+#             print(year," is a leap year")
+#         else:
+#             print(year," is not leap year")
+#     else:
+#         print(year," is a leap year")    
+# else:
+#     (year," is not leap year")
+
+
+##for loop 
+
+for i in range(5):
+     print(i)
+
+for i in range(1,6):
+    print(i)
+
+for i in range(1,10,2):
+    print(i)
+
+for i in range(10,1,-1):
+  print(i)
+
+
+## strings
+str="shreya gupta"
+for i in str:
+    print(i)
+
+## while loop
+
+count=0
+while count<5:
+   print(count)
+   count=count+1
+
+count=0
+while count%2==0:
+    print(count)
+    count=count+1
+     
+## break statement
+for i in range(10):
+    if i==5:
+        break
+    print(i)
+
+
+## continue statement
+
+for i in range(10):
+    if i%2==0:
+        continue
+    print(i)
+
+## pass statement
+
+for i in range(5):
+    if i==3:
+        pass
+    print(i)
+
+## nested loop
+for i in range(3):
+    for j in range(2):
+        print(f"i:{i} and j:{j}")
+
+## example
+n=10
+sum=0
+count=1
+
+while count<=n:
+    sum=sum+count
+    count=count+1
+print("sum of the first 10 natural number: ", sum)
+
+
+#for loop
+
+n=10
+sum=0
+count=1
+
+for i in range(11):
+    sum=sum+i
+
+print(i)
+
+# for loop
+for num in range(1,101):
+    if num>1:
+        for i in range(2,num):
+            if num%i==0:
+                break
         else:
-            print(year," is not leap year")
-    else:
-        print(year," is a leap year")    
-else:
-    (year," is not leap year")
-
-    
-                      
+            print(num) 
