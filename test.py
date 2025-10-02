@@ -374,3 +374,60 @@ for num in range(1,101):
                 break
         else:
             print(num) 
+
+
+## List
+lst=[]
+print(type(lst))
+
+names=["shreya","jack","aditri"]
+print(names)
+
+Mixed_list=[1,"Hello",3.14,"True"]
+print(Mixed_list)
+print(type(Mixed_list))
+
+## Accessing list elements
+
+fruits=["Apple","Banana","cherry","kiwi","Grapes"]
+print(fruits[0])
+print(fruits[2])
+print(fruits[-1])
+print(fruits[1:])
+print(fruits[1:3])
+print(fruits[-1:-4])
+
+## Modifying the list elements
+fruits=["Apple","banana","kiwi","cherry","grapes"]
+fruits[1]="watermelon"
+print(fruits)
+
+## list method
+fruits=["Apple","banana","kiwi","cherry","grapes"]
+fruits.append("orange")
+print(fruits)
+
+fruits.insert(1,"coconut")
+print(fruits)
+
+fruits.remove("grapes")
+print(fruits)
+
+fruits.pop()
+print(fruits)
+
+fruits.index("cherry")
+fruits.insert(2,"banana")
+print(fruits.count("banana"))
+fruits.sort()
+fruits.reverse()
+fruits.clear()
+print(fruits)
+
+## slicing list
+numbers=[1,2,3,4,5,6,7,8,9]
+print(numbers[2:5])
+
+print(numbers[5 :])
+print(numbers[: : 2])
+print(numbers[: : -1])
