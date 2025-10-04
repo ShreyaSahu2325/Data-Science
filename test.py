@@ -431,3 +431,54 @@ print(numbers[2:5])
 print(numbers[5 :])
 print(numbers[: : 2])
 print(numbers[: : -1])
+
+## iterating over list
+for number in numbers:
+    print(number)
+
+## indexing with list
+for index , number in enumerate(numbers):
+    print(index,number)
+
+
+## list comprehension
+lst=[]
+for x in range(10):
+    lst.append(x**2)
+
+print(lst)
+
+[x**2 for x in range(10)]
+
+##list comprehension
+
+#basic syntax
+#with conditional logic
+
+
+square=[num**2 for num in range(10)]
+print(square)
+
+## list comprehension with conditional 
+for i in range(10):
+    if i%2==0:
+        print(lst.append(i))
+
+print(lst)
+
+even_numbers=[num for num in range(10) if num%2==0]
+print(even_numbers)
+
+## nested list comprehension
+lst1=[1,2,3,4]
+lst2=["a","b","c","d"]
+
+pair=[[i,j] for i in lst1 for j in lst2 ]
+print(pair)
+
+## list comprehension with function calls
+
+words=["hello","world","python","list"]
+
+lengths=[len(word) for word in words]
+print(lengths)
