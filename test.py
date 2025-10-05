@@ -482,3 +482,84 @@ words=["hello","world","python","list"]
 
 lengths=[len(word) for word in words]
 print(lengths)
+
+## creating Tuple
+empty_tuple=()
+print(empty_tuple)
+print(type(empty_tuple))
+
+lst=list()
+print(type(lst))
+tpl=tuple()
+print(type(tpl))
+
+numbers=tuple([1,2,3,4,5])
+print(numbers)
+
+lst=list((1,2,3,4,5))
+print(lst)
+
+
+mixed_tuple=(1,"Hello world",3.14,True)
+print(mixed_tuple)
+
+## Accessing Tuple elements
+numbers=[1,2,3,4,5]
+print(numbers[2])
+print(numbers[-1])
+print(numbers[0:4])
+
+numbers=[1,2,3,4,5,6]
+print(numbers)
+
+mixed_tuple * 3
+print(mixed_tuple)
+
+## immutable nature of tuples
+
+lst=[1,2,3,4,5]
+print(lst)
+
+lst[1]="shreya"
+print(lst)
+
+numbers=[1,2,3,4,5]
+numbers[1]="shreya"
+
+## tuple method
+print(numbers.count(1))
+print(numbers.index(3))
+
+## packing and unpacking tuple
+packed_tuple=1,"Hello",3.14
+print(packed_tuple)
+
+a,b,c=packed_tuple
+print(a)
+print(b)
+print(c)
+
+## unpacking with *
+names=("jack","krish","adver")
+first,*middle,last=names
+print(first)
+print(middle)
+print(last)
+
+## NESTED tuple
+# nested list
+lst=[[1,2,3],[5,6,7],(5,"hello","c")]
+lst[2]
+
+## access the element inside a tuple
+nested_tuple=((1,2,3),("a","b","c"),(True,False))
+print(nested_tuple[2])
+
+print(nested_tuple[1][2])
+
+## iterating over nested tuple
+
+for sub_tuple in nested_tuple:
+    for item in sub_tuple:
+        print(item,end=" ")
+    print()    
