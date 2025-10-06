@@ -563,3 +563,86 @@ for sub_tuple in nested_tuple:
     for item in sub_tuple:
         print(item,end=" ")
     print()    
+
+
+## create a set
+my_set={1,2,3,4,5}
+print(type(my_set))
+
+my_empty_set=set()
+print(my_empty_set)
+
+my_set={1,2,3,4,5}
+print(my_set)
+
+my_set={1,2,3,4,5,6,6,5}
+print(my_set)
+
+## basic sets operation
+#3 adding and removing element
+
+my_set=set([1,2,3,4,5,6])
+my_set.add(7)
+print(my_set)
+my_set.remove(3)
+print(my_set)
+
+## pop method
+removed_element=my_set.pop
+print(removed_element)
+print(my_set)
+
+fruits={"apple","banana","cherry"}
+items=fruits.pop()
+print(items)
+print(fruits)
+
+## clear all the elements
+my_set={1,2,3,4,5}
+my_set.clear()
+print(my_set)
+
+my_set={1,2,3,4,5,6}
+print(3 in my_set)
+print(10 in my_set)
+
+## mathematical operation
+set1={1,2,3,4,5}
+set2={4,7,8,9,3}
+union_set=set1.union(set2)
+print(union_set)
+
+## intersection set
+set1={1,2,3,4,5}
+set2={2,1,4,5,6,8}
+intersection_set=set1.intersection(set2)
+print(intersection_set)
+
+## difference
+set1={1,2,3,4,5,6,7}
+set2={2,3,4,9,8}
+print(set1.difference(set2))
+set.difference_update(set2)
+print(set1)
+
+set2.difference(set1)
+
+set={1,2,3,4,5}
+set2={2,3,4,7,8,9}
+print(set1.symmetric_difference(set2))
+
+## sets method
+set1={1,2,3}
+set2={3,4,5}
+## is subset
+print(set1.issubset(set2))
+print(set1.issuper set(set2))
+
+## counting unique words in text
+text=" in this tutorial we are discuss about sets"
+words=text.split()
+
+## coverting list of words to set to get unique words
+unique_words=set(words)
+print(unique_words)
+print(len(unique_words))
