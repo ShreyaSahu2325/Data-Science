@@ -636,13 +636,40 @@ set1={1,2,3}
 set2={3,4,5}
 ## is subset
 print(set1.issubset(set2))
-print(set1.issuper set(set2))
 
-## counting unique words in text
-text=" in this tutorial we are discuss about sets"
-words=text.split()
 
-## coverting list of words to set to get unique words
-unique_words=set(words)
-print(unique_words)
-print(len(unique_words))
+## create dictionaries
+empty_dict={}
+print(type(empty_dict))
+
+empty_dict=dict()
+print(empty_dict)
+
+student={"name":"shreya","age": 20, "grade": 24}
+print(student)
+
+# error
+student={"name":"shreya","age": 20,"name":"shreya"}
+print(student)
+
+## accessing dictionary elements
+student={"name":"shreya","age": 20, "grade" :"A"}
+print(student["grade"])
+print(student["name"])
+print(student["age"])
+
+
+## accessing using get() method
+
+student={"name":"shreya","age":20,"grade":"A"}
+print(student.get("grade"))
+print(student.get("last_name"))
+print(student.get("last_name","not available"))
+
+## modifying dictionary element
+
+student={"name":"shreya","age":20,"grade":"A"}
+student["age"]=33
+print(student)
+student["address"]="india"
+print(student)

@@ -1,2 +1,2 @@
 
-## counting unique words in test
+empty_dict=dict()
