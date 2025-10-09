@@ -673,3 +673,39 @@ student["age"]=33
 print(student)
 student["address"]="india"
 print(student)
+
+del student["grade"]
+print(student)
+
+## dictionary method
+keys=student.keys()
+print(keys)
+
+values=student.values()
+print(values)
+
+items=student.items()
+print(items)
+
+## shallow copy
+student_copy=student
+print(student)
+print(student_copy)
+
+student["name"]="shreya2"
+print(student)
+print(student_copy)
+
+## iterating over dictionaries
+for keys in student.keys():
+    print(keys)
+
+## Iterating over values
+for values in student.values():
+    print(values)
+
+
+## itearte over key value pairs
+
+for key,value in student.items():
+    print(f"{key} :{value}")
