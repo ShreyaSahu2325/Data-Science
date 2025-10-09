@@ -709,3 +709,47 @@ for values in student.values():
 
 for key,value in student.items():
     print(f"{key} :{value}")
+
+## nested dictionary
+
+students={
+    "student" : "jack", 
+    "age" : 20,
+    "score" : 90
+}
+print(students)
+
+print(students["student"],["name"])
+print(students["age"])
+
+##access nested dictionary elements
+students={
+    "student1" : {"name" : "shreya", "age" : 20},
+     "student2" : {"name" : "peter" ,"age" :35}
+ }
+
+print(students["student2"]["name"])
+print(students["student2"]["age"])
+students.items()
+## iterating over nested dictionary
+
+for student_id, student_info in student.items ():
+    print(f"{student_id}:{student_info}")
+    for key,value in student.items():
+        print(f"{key}:{value}")
+
+
+## dictionary comprehension
+squares={x:x**2 for x in range(5)}
+print(squares)
+
+## conditional dictionary comprehension
+
+evens = {x:x**2 for x in range(10) if x%2==0}
+print(evens)
+
+## merged dictionary
+dict1={"a":1 ,"b":2}
+dict2={"c" :3 , "d" :4 }
+merged_dict={**dict1,**dict2} 
+print(merged_dict)
