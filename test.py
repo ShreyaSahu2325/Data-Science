@@ -754,4 +754,85 @@ dict2={"c" :3 , "d" :4 }
 merged_dict={**dict1,**dict2} 
 print(merged_dict)
 
-## create a to_Do_list
+#manage A TO Do List
+## create a to_Do_list to keep track of tasks
+To_do_list=["buy Grocries","clean the house","pay bill"]
+#Adding the task
+To_do_list.append("schedule meeting")
+To_do_list.append("go for a run")
+
+## Removing the completed task
+
+To_do_list.remove("clean the house")
+
+##checking if a task is in the list
+
+if "pay bill" in To_do_list:
+    print("Don't forget to pay the utility bills")
+
+print("To do list remaing")
+for task in To_do_list:
+    print(f"{task}")
+
+
+## organizing student grades
+grades=[85, 78,  98, 67, 97]
+
+## Adding a new grade
+grades.append(99)
+
+## calculating the average grade 
+
+average_grade= sum(grades) / len(grades)
+print(f"Average grade : {average_grade:.2f}")
+
+## find the highest grades
+highest_grade=max(grades)
+lowest_grade=min(grades)
+print(f"Highest grade :{highest_grade}")
+print(f"lowest grade :{lowest_grade}")
+
+
+# use a list to maange inventory items in a stock
+
+## managing in a inventory
+inventory=["apple","bananas","oranges","grapes"]
+
+## adding a new items
+inventory.append("mangos")
+
+## removing the items that is out of stock
+inventory.remove("bananas")
+
+## checking if an items is in stock
+items="oranges"
+if items in inventory:
+    print(f"{items} is in stock")
+
+else:
+    print(f"{items} is out of stock")
+
+## printing the inventory
+print("inventory list : ")
+for item in inventory:
+    print(f"-{items}")
+    
+## collecting user service
+feedback=["Great service!" ,"very satisfied" ,"could be better","excellent experience"]
+
+
+## adding a new feedback
+feedback.append("not happy with the service")
+
+## removing the items that is out of stock
+inventory.remove("bananas")
+
+## counting specific feedback
+positive_feedback_count= sum(1 for comment in feedback if "great" in comment.lower() or "excellent" in comment.lower())
+print(f"positive feedback count :{positive_feedback_count}")
+
+## printing all feedback
+print("user feredback")
+for comment in feedback:
+    print(f"-{comment}")
+
