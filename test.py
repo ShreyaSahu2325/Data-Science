@@ -804,89 +804,89 @@
 # ## removing the items that is out of stock
 # inventory.remove("bananas")
 
-# ## checking if an items is in stock
-# items="oranges"
-# if items in inventory:
-#     print(f"{items} is in stock")
+## checking if an items is in stock
+items="oranges"
+if items in inventory:
+    print(f"{items} is in stock")
 
-# else:
-#     print(f"{items} is out of stock")
+else:
+    print(f"{items} is out of stock")
 
-# ## printing the inventory
-# print("inventory list : ")
-# for item in inventory:
-#     print(f"-{items}")
+## printing the inventory
+print("inventory list : ")
+for item in inventory:
+    print(f"-{items}")
     
-#collecting user service
-# # feedback=["Great service!" ,"very satisfied" ,"could be better","excellent experience"]
+collecting user service
+# feedback=["Great service!" ,"very satisfied" ,"could be better","excellent experience"]
 
 
-# # ## adding a new feedback
-# # feedback.append("not happy with the service")
+# ## adding a new feedback
+# feedback.append("not happy with the service")
 
-# # ## removing the items that is out of stock
-# # inventory.remove("bananas")
+# ## removing the items that is out of stock
+# inventory.remove("bananas")
 
-# # ## counting specific feedback
-# # positive_feedback_count= sum(1 for comment in feedback if "great" in comment.lower() or "excellent" in comment.lower())
-# # print(f"positive feedback count :{positive_feedback_count}")
+# ## counting specific feedback
+# positive_feedback_count= sum(1 for comment in feedback if "great" in comment.lower() or "excellent" in comment.lower())
+# print(f"positive feedback count :{positive_feedback_count}")
 
-# # ## printing all feedback
-# # print("user feredback")
-# # for comment in feedback:
-# #     print(f"-{comment}")
+# ## printing all feedback
+# print("user feredback")
+# for comment in feedback:
+#     print(f"-{comment}")
 
-# ## Function in python
-# #syntax
-# def function_name(parameters):
-#     """Docstring"""
-#     ##Function body
-#     return 
+## Function in python
+#syntax
+def function_name(parameters):
+    """Docstring"""
+    ##Function body
+    return 
 
-# ## why function
-# num=24
-# if num%2==0:
-#     print("the number is even")
-# else:
-#     print("the number is odd")
+## why function
+num=24
+if num%2==0:
+    print("the number is even")
+else:
+    print("the number is odd")
 
-# def even_or_odd(num):
-#     """This function finds even or odd"""
-#     if num%2==0:
-#         print("the number is even")
-#     else:
-#         print("the number is odd")
+def even_or_odd(num):
+    """This function finds even or odd"""
+    if num%2==0:
+        print("the number is even")
+    else:
+        print("the number is odd")
 
-# ## call this function
-# even_or_odd(23)
+## call this function
+even_or_odd(23)
 
-# ## function with multiple parameters
+## function with multiple parameters
 
-# def add(a,b):
-#     return a+b
+def add(a,b):
+    return a+b
 
-# result=add(2,4)
-# print(result)
+result=add(2,4)
+print(result)
 
-# ## default parameters
+## default parameters
 
-# def greet(name="Guest"):
-#     print(f"{name} Welcome to the paradise")
+def greet(name="Guest"):
+    print(f"{name} Welcome to the paradise")
 
-# greet()
+greet()
 
 
-# def greek(name="Guest"):
-#     print(f"{name} welcome to my channel")
+def greek(name="Guest"):
+    print(f"{name} welcome to my channel")
 
-# greek()
+greek()
 
-# ## variable length arguments
-# # postional and keyword argument
+## variable length arguments
+# postional and keyword argument
 
-# def print_numbers(*args):
-#     for number in args:
-#         print(number)
+def print_numbers(*args):
+    for number in args:
+        print(number)
  
 # # call this function
 # print_numbers(1,2,3,4,5,6,8,"shreya")
@@ -897,7 +897,7 @@
 #     for key,value in kwargs.items():
 #         print(f"{key}:{value}")
 
-# print_details(name="shreya",age=20,country="india")
+#print_details(name="shreya",age=20,country="india")
 
 # def print_details(*args,**kwargs):
 #     for val in args:
