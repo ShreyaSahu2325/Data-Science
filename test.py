@@ -841,3 +841,77 @@ print(addition(2,4,2))
 addition1=lambda x,y,z:x+y+z
 addition(1,2,3)
 
+## Map function
+def square(x):
+    return x*x
+
+print(square(10))
+
+numbers=[1,2,3,4,5,6,7,8,9]
+print(list(map(square,numbers)))
+
+## lambda function with map
+
+numbers=[1,2,3,4,5,6,7,8,9]
+print(list(map(lambda x:x*x,numbers)))
+
+##map multiple iterator
+numbers1=[1,2,3]
+numbers2=[4,5,6]
+added_number=(list(map(lambda x,y:x+y,numbers1,numbers2)))
+print(added_number)
+
+
+## map() to convert string to integer
+
+str_numbers=["1","2","3","4","5","6","7","8"]
+int_numbers=list(map(int,str_numbers))
+print(int_numbers)
+
+## dictionary function
+def get_age(person):
+    return person["age"]
+
+people=[
+    {"name":"shreya","age":20},
+    {"name":"jack","age":21}
+]
+
+print(list(map(get_age,people)))
+print(list(map(get_age,people)))
+
+## filter() function
+def even(num):
+    if num%2==0:
+        return True
+print(even(24))
+
+
+lst=[1,2,3,4,5,6,7,8,9,10,11]
+
+print(list(filter(even,lst)))
+
+## filter with a lambda function
+
+numbers=[1,2,3,4,5,6,7,8,9]
+greater_than_five=(list(filter(lambda x:x>5,numbers)))
+
+print(greater_than_five)
+
+## filter() function with lambda function and multiple condition
+
+numbers=[1,2,3,4,5,6,7,8,9]
+even_and_greater_than_five=(list(filter(lambda x:x>5 and x%2==0,numbers)))
+print(even_and_greater_than_five)
+
+## filter() function with dictionary
+
+people=[
+    {"name":"shreya","age":20},
+    {"name":"jack","age":21}
+] 
+
+def age_greater_than_25(person):
+    return person["age"]>25
+     
+print(list(filter(age_greater_than_25,people)))
