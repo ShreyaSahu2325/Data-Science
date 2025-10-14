@@ -806,5 +806,37 @@
 
 ## checking if an items is in stock
 
-print(factorial(5))
+# print(factorial(5))
 
+
+## lambda function
+
+# example
+def addition(a,b):
+    return a+b
+
+print(addition(2,4))
+
+addition=lambda a,b:a+b
+type(addition)
+print(addition)
+
+## example
+
+def even(num):
+    if num%2==0:
+        return True
+    
+print(even(24))
+
+even1=lambda num:num%2==0
+even(12)
+
+## example 3
+def addition(x,y,z):
+    return x+y+z
+
+print(addition(2,4,2))
+
+addition1=lambda x,y,z:x+y+z
+addition(1,2,3)
