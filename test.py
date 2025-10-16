@@ -907,11 +907,11 @@ print(even_and_greater_than_five)
 ## filter() function with dictionary
 
 people=[
-    {"name":"shreya","age":20},
-    {"name":"jack","age":21}
+    {"name":"shreya","age":26},
+    {"name":"jack","age":26}
 ] 
 
-def age_greater_than_25(person):
-    return person["age"]>25
-     
-print(list(filter(age_greater_than_25,people)))
+def age_greater_than_30(person):
+    return person["age"]>10
+
+print(list(filter(age_greater_than_30,people)))
