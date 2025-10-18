@@ -917,15 +917,4 @@
 # print(list(filter(age_greater_than_30,people)))
 
 
-## import math
-import math
-math.sqrt(16)
-
-from math import sqrt,pi
-print(sqrt(16))
-print(sqrt(25))
-print(pi)
-
-## import Numpy as np
-Numpy.array([1,2,3,4])
 
