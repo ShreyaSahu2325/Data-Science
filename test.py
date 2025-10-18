@@ -809,109 +809,123 @@
 # print(factorial(5))
 
 
-## lambda function
+# ## lambda function
 
-# example
-def addition(a,b):
-    return a+b
+# # example
+# def addition(a,b):
+#     return a+b
 
-print(addition(2,4))
+# print(addition(2,4))
 
-addition=lambda a,b:a+b
-type(addition)
-print(addition)
+# addition=lambda a,b:a+b
+# type(addition)
+# print(addition)
 
-## example
+# ## example
 
-def even(num):
-    if num%2==0:
-        return True
+# def even(num):
+#     if num%2==0:
+#         return True
     
-print(even(24))
+# print(even(24))
 
-even1=lambda num:num%2==0
-even(12)
+# even1=lambda num:num%2==0
+# even(12)
 
-## example 3
-def addition(x,y,z):
-    return x+y+z
+# ## example 3
+# def addition(x,y,z):
+#     return x+y+z
 
-print(addition(2,4,2))
+# print(addition(2,4,2))
 
-addition1=lambda x,y,z:x+y+z
-addition(1,2,3)
+# addition1=lambda x,y,z:x+y+z
+# addition(1,2,3)
 
-## Map function
-def square(x):
-    return x*x
+# ## Map function
+# def square(x):
+#     return x*x
 
-print(square(10))
+# print(square(10))
 
-numbers=[1,2,3,4,5,6,7,8,9]
-print(list(map(square,numbers)))
+# numbers=[1,2,3,4,5,6,7,8,9]
+# print(list(map(square,numbers)))
 
-## lambda function with map
+# ## lambda function with map
 
-numbers=[1,2,3,4,5,6,7,8,9]
-print(list(map(lambda x:x*x,numbers)))
+# numbers=[1,2,3,4,5,6,7,8,9]
+# print(list(map(lambda x:x*x,numbers)))
 
-##map multiple iterator
-numbers1=[1,2,3]
-numbers2=[4,5,6]
-added_number=(list(map(lambda x,y:x+y,numbers1,numbers2)))
-print(added_number)
-
-
-## map() to convert string to integer
-
-str_numbers=["1","2","3","4","5","6","7","8"]
-int_numbers=list(map(int,str_numbers))
-print(int_numbers)
-
-## dictionary function
-def get_age(person):
-    return person["age"]
-
-people=[
-    {"name":"shreya","age":20},
-    {"name":"jack","age":21}
-]
-
-print(list(map(get_age,people)))
-print(list(map(get_age,people)))
-
-## filter() function
-def even(num):
-    if num%2==0:
-        return True
-print(even(24))
+# ##map multiple iterator
+# numbers1=[1,2,3]
+# numbers2=[4,5,6]
+# added_number=(list(map(lambda x,y:x+y,numbers1,numbers2)))
+# print(added_number)
 
 
-lst=[1,2,3,4,5,6,7,8,9,10,11]
+# ## map() to convert string to integer
 
-print(list(filter(even,lst)))
+# str_numbers=["1","2","3","4","5","6","7","8"]
+# int_numbers=list(map(int,str_numbers))
+# print(int_numbers)
 
-## filter with a lambda function
+# ## dictionary function
+# def get_age(person):
+#     return person["age"]
 
-numbers=[1,2,3,4,5,6,7,8,9]
-greater_than_five=(list(filter(lambda x:x>5,numbers)))
+# people=[
+#     {"name":"shreya","age":20},
+#     {"name":"jack","age":21}
+# ]
 
-print(greater_than_five)
+# print(list(map(get_age,people)))
+# print(list(map(get_age,people)))
 
-## filter() function with lambda function and multiple condition
+# ## filter() function
+# def even(num):
+#     if num%2==0:
+#         return True
+# print(even(24))
 
-numbers=[1,2,3,4,5,6,7,8,9]
-even_and_greater_than_five=(list(filter(lambda x:x>5 and x%2==0,numbers)))
-print(even_and_greater_than_five)
 
-## filter() function with dictionary
+# lst=[1,2,3,4,5,6,7,8,9,10,11]
 
-people=[
-    {"name":"shreya","age":26},
-    {"name":"jack","age":26}
-] 
+# print(list(filter(even,lst)))
 
-def age_greater_than_30(person):
-    return person["age"]>10
+# ## filter with a lambda function
 
-print(list(filter(age_greater_than_30,people)))
+# numbers=[1,2,3,4,5,6,7,8,9]
+# greater_than_five=(list(filter(lambda x:x>5,numbers)))
+
+# print(greater_than_five)
+
+# ## filter() function with lambda function and multiple condition
+
+# numbers=[1,2,3,4,5,6,7,8,9]
+# even_and_greater_than_five=(list(filter(lambda x:x>5 and x%2==0,numbers)))
+# print(even_and_greater_than_five)
+
+# ## filter() function with dictionary
+
+# people=[
+#     {"name":"shreya","age":26},
+#     {"name":"jack","age":26}
+# ] 
+
+# def age_greater_than_30(person):
+#     return person["age"]>10
+
+# print(list(filter(age_greater_than_30,people)))
+
+
+## import math
+import math
+math.sqrt(16)
+
+from math import sqrt,pi
+print(sqrt(16))
+print(sqrt(25))
+print(pi)
+
+## import Numpy as np
+Numpy.array([1,2,3,4])
+
