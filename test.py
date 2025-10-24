@@ -919,4 +919,11 @@
 import numpy as np
 np.array([1,2,3,4])
 
+from package.maths import *
+from package.subpackage.mult import multiply
+
+print(addition(2,3))
+print(substraction(4,3))
+print(multiply(2,3))
+
 
